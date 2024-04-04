@@ -8,6 +8,7 @@ exports.createPost = (req, res, next) => {
     // Cần body-parser để phân tích lấy được dữ liệu từ body client
     const title = req.body.title;
     const content = req.body.content;
+    console.log(title, content);
 
     // Create post in db
     res.status(201).json({
